@@ -1,0 +1,45 @@
+body {
+    --default-height: 44px;
+    --default-width: 44px;
+    background-color: bisque;
+}
+
+/*
+    red: #a84035
+    blue: #2b496e
+    green: #46613d
+    yellow: #b99333
+    light-red: #a8534b
+*/
+
+#brand {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: 44px;
+    line-height: 44px;
+    color: #a8534b;
+}
+
+#intersection-logo {
+    width: var(--default-width);
+    height: var(--default-height);
+}
+
+#brand-name {
+    height: var(--default-height);
+}
+
+#menu-icon {
+    width: var(--default-width);
+    height: var(--default-height);
+
+}
+
+#navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    vertical-align: middle;
+    align-items: center;
+}
