@@ -38,8 +38,19 @@ body {
     --green: #46613d;
     --yellow: #b99333;
     --light-red: #a8534b;
+    --black: #131313;
     font-family: queue;
     background-color: bisque;
+}
+
+.coming-soon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40vh;
+    color: var(--blue);
+    font-size: 64px;
 }
 
 #brand {
