@@ -49,6 +49,7 @@ body {
     justify-content: center;
     align-items: center;
     color: var(--light-red);
+    font-size: 12px;
 }
 
 .coming-soon {
