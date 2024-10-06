@@ -43,12 +43,20 @@ body {
     background-color: bisque;
 }
 
+#copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--light-red);
+}
+
 .coming-soon {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 40vh;
+    margin: 40vh 0 40vh 0;
     color: var(--blue);
     font-size: 64px;
 }
