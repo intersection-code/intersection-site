@@ -1,16 +1,46 @@
-body {
-    --default-height: 44px;
-    --default-width: 44px;
-    background-color: bisque;
+@font-face {
+    font-family: "dyslexie";
+    src:    url("../../assets/fonts/DyslexieBold170695.ttf"),
+            url("../../assets/fonts/DyslexieBoldItalic170695.ttf"),
+            url("../../assets/fonts/DyslexieItalic170695.ttf"),
+            url("../../assets/fonts/DyslexieRegular170695.ttf"),
 }
 
-/*
-    red: #a84035
-    blue: #2b496e
-    green: #46613d
-    yellow: #b99333
-    light-red: #a8534b
-*/
+@font-face {
+    font-family: "queue";
+    src:    url("../../assets/fonts/queueBlack.otf"),
+            url("../../assets/fonts/queueBlackitalic.otf"),
+            url("../../assets/fonts/queueBold.otf"),
+            url("../../assets/fonts/queueBolditalic.otf"),
+            url("../../assets/fonts/queueBook.otf"),
+            url("../../assets/fonts/queueBookitalic.otf"),
+            url("../../assets/fonts/queueLight.otf"),
+            url("../../assets/fonts/queueLightitalic.otf"),
+            url("../../assets/fonts/queueMedium.otf"),
+            url("../../assets/fonts/queueMediumitalic.otf"),
+            url("../../assets/fonts/queueThin.otf"),
+            url("../../assets/fonts/queueThinitalic.otf"),
+}
+
+.dyslexie {
+    font-family: "dyslexie"
+}
+
+.queue {
+    font-family: "queue"
+}
+
+body {
+    --default-width: 44px;
+    --default-height: 44px;
+    --red: #a84035;
+    --blue: #2b496e;
+    --green: #46613d;
+    --yellow: #b99333;
+    --light-red: #a8534b;
+    font-family: queue;
+    background-color: bisque;
+}
 
 #brand {
     display: flex;
@@ -18,7 +48,7 @@ body {
     gap: 8px;
     font-size: 44px;
     line-height: 44px;
-    color: #a8534b;
+    color: var(--light-red);
 }
 
 #intersection-logo {
@@ -28,6 +58,7 @@ body {
 
 #brand-name {
     height: var(--default-height);
+    text-transform: uppercase;
 }
 
 #menu-icon {
