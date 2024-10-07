@@ -43,6 +43,9 @@ body {
     --black: #131313;
     font-family: queue;
     background-color: bisque;
+    height: auto;
+    align-items: center;
+
 }
 
 #copyright {
@@ -57,11 +60,11 @@ body {
 
 .coming-soon {
     display: flex;
+    height: 90vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 40vh 0 40vh 0;
     color: var(--blue);
     font-size: 64px;
 }
