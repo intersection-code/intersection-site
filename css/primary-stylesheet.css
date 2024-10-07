@@ -48,6 +48,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     color: var(--light-red);
     font-size: 12px;
 }
@@ -57,6 +58,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin: 40vh 0 40vh 0;
     color: var(--blue);
     font-size: 64px;
@@ -71,15 +73,17 @@ body {
     color: var(--light-red);
 }
 
+#brand-name {
+    height: var(--default-height);
+    text-transform: capitalize;
+}
+
 #intersection-logo {
     width: var(--default-width);
     height: var(--default-height);
 }
 
-#brand-name {
-    height: var(--default-height);
-    text-transform: uppercase;
-}
+
 
 #menu-icon {
     width: var(--default-width);
