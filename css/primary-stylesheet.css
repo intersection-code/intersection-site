@@ -77,7 +77,6 @@ body {
 
 #brand-name {
     height: var(--default-height);
-    text-transform: capitalize;
 }
 
 #intersection-logo {
