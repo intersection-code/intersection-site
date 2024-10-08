@@ -9,17 +9,16 @@
 @font-face {
     font-family: "queue";
     src:    url("../assets/fonts/queueBlack.otf"),
-            url("../assets/fonts/queueBlackitalic.otf"),
-            url("../assets/fonts/queueBold.otf"),
-            url("../assets/fonts/queueBolditalic.otf"),
-            url("../assets/fonts/queueBook.otf"),
-            url("../assets/fonts/queueBookitalic.otf"),
-            url("../assets/fonts/queueLight.otf"),
-            url("../assets/fonts/queueLightitalic.otf"),
-            url("../assets/fonts/queueMedium.otf"),
-            url("../assets/fonts/queueMediumitalic.otf"),
-            url("../assets/fonts/queueThin.otf"),
-            url("../assets/fonts/queueThinitalic.otf"),
+}
+
+@font-face {
+    font-family: "queueBold";
+    src:    url("../assets/fonts/queueBold.otf"),
+}
+
+@font-face {
+    font-family: "queueLight";
+    src:    url("../assets/fonts/queueLight.otf"),
 }
 
 /* delete this comment line */
@@ -41,44 +40,97 @@ body {
     --yellow: #b99333;
     --light-red: #a8534b;
     --black: #131313;
+    --highlight: #ffdb7f;
+    display: flex;
+    flex-direction: column;
     font-family: queue;
-    background-color: bisque;
+    background-color: #ffe4c4;
     height: auto;
     align-items: center;
+    margin: 24px;
+}
 
+#text-and-graphic {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    justify-self: center;
+    align-self: center;
+}
+
+#text-col, #graphic-col {
+    flex: 1;
+}
+
+#graphic-col img {
+    width: 100%;
+    height: auto;
 }
 
 #copyright {
     display: flex;
     flex-direction: column;
+    position: relative;
+    margin-top: 24px;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: var(--light-red);
     font-size: 12px;
+
 }
 
-.coming-soon {
+.content {
     display: flex;
-    height: 90vh;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: var(--blue);
-    font-size: 64px;
+    margin-top: 48px;
+    font-family: queueLight;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 28px;
 }
 
-#brand {
+.blurb {
+    display: flex;
+    max-width: 400px;
+    flex-direction: column;
+    text-align: left;
+    color: var(--blue);
+}
+
+.call-to-action {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    color: var(--green);
+    margin-top: 24px;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: queueLight;
+    font-weight: 800;
+}
+
+.call-to-action a {
+    color: var(--green) !important;
+}
+
+.call-to-action a:hover {
+    background-color: var(--highlight);
+}
+
+#company-brand {
     display: flex;
     flex-direction: row;
     gap: 8px;
-    font-size: 44px;
-    line-height: 44px;
+    font-size: 24px;
+    line-height: 24px;
     color: var(--light-red);
 }
 
-#brand-name {
+#company-name {
+    display: flex;
+    flex-direction: column;
     height: var(--default-height);
 }
 
@@ -86,8 +138,6 @@ body {
     width: var(--default-width);
     height: var(--default-height);
 }
-
-
 
 #menu-icon {
     width: var(--default-width);
@@ -101,4 +151,23 @@ body {
     justify-content: space-between;
     vertical-align: middle;
     align-items: center;
+}
+
+#mobile-landing-graphic {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #text-and-graphic {
+        flex-direction: column;
+    }
+
+    #graphic-col {
+        display: none;
+    }
+
+    #mobile-landing-graphic {
+        display: flex;
+        margin-top: 24px;
+    }
 }
